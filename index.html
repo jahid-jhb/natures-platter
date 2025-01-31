@@ -7,13 +7,19 @@
     <script src="https://kit.fontawesome.com/60f0eee187.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+        .sora-font {
+            font-family: "Sora", serif;
+        }
+    </style>
 </head>
-<body>
+<body class="sora-font text-[#111111]">
     <header class="lg:px-[140px] lg:pt-6 bg-gradient-to-b from-[#ffffff] to-[#efebe3]">
         <nav class="flex justify-between items-center max-[576px]:border-b border-[#179800]"> 
             <div class="navbar">
                 <div class="navbar-start">
-                  <a class="lg:hidden"><img src="assets/mobile-header-logo.png" alt=""></a>
+                  <a class="md:hidden lg:hidden"><img src="assets/mobile-header-logo.png" alt=""></a>
                   <a class="max-[576px]:hidden"><img src="assets/logo-header.png" alt=""></a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
