@@ -4,10 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nature's Platter</title>
+    <script src="https://kit.fontawesome.com/60f0eee187.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
+    <header class="lg:px-[140px] lg:pt-6 bg-gradient-to-b from-[#ffffff] to-[#efebe3]">
+        <nav class="flex justify-between items-center max-[576px]:border-b border-[#179800]"> 
+            <div class="navbar">
+                <div class="navbar-start">
+                  <a class="lg:hidden"><img src="assets/mobile-header-logo.png" alt=""></a>
+                  <a class="max-[576px]:hidden"><img src="assets/logo-header.png" alt=""></a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 text-xl">
+                    <li><a>Product</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end max-[576px]:hidden flex items-center text-xl">
+                    <button class="mr-6"><i class="fa-solid fa-magnifying-glass h-6 w-6"></i></button>
+                    <button class="mr-6"><i class="fa-solid fa-cart-shopping h-6 w-6"></i></button>       
+                    <a class="btn btn-outline mr-3">Login</a>
+                    <a class="btn btn-primary bg-[#179800] px-7 py-2 text-white border-[#179800] hover:border-[#179800] hover:bg-white hover:text-[#179800]">Register</a>
+                </div>
+            </div>
+            <div class="md:hidden lg:hidden">
+                <label class="btn btn-outline border-none swap swap-rotate text-[#179800]">
+                    <!-- this hidden checkbox controls the state -->
+                    <input type="checkbox" />
+                  
+                    <!-- hamburger icon -->
+                    <svg
+                      class="swap-off fill-current"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 512 512">
+                      <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
+                    </svg>
+                  
+                    <!-- close icon -->
+                    <svg
+                      class="swap-on fill-current"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 512 512">
+                      <polygon
+                        points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" />
+                    </svg>
+                  </label>
+            </div>
+            
+        </nav>
+
+        <section class="mt-12 lg:mt-20 md:max-w-2xl lg:max-w-3xl xl:max-w-4xl 2xl:max-w-5xl mx-auto text-center">
+            <h2 class="mx-[3rem] lg:mx-[6.375rem] text-[2rem] lg:text-[3.5rem] font-semibold">Freshness <span class="text-[#179800]">You Can <br>
+                Count</span> On, 
+                Prices You’ll Love!</h2>
+            <p class="mx-[3rem] lg:mx-[6.375rem] lg:text-sm my-8">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
+            <img src="assets/hero-vegetables.png" alt="">
+        </section>
+    </header>
     
 </body>
 </html>
