@@ -7,6 +7,37 @@
     <script src="https://kit.fontawesome.com/60f0eee187.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            keyframes: {
+              typing: {
+                "0%": {
+                  width: "0%",
+                  visibility: "hidden"
+                },
+                "100%": {
+                  width: "100%"
+                }
+              },
+              blink: {
+                "50%": {
+                  borderColor: "transparent"
+                },
+                "100%": {
+                  borderColor: "#111111"
+                }
+              }
+            },
+            animation: {
+              typing: "typing 2s steps(20) infinite alternate, blink .7s infinite"
+            }
+          },
+        },
+        plugins: [],
+      }
+    </script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
         .sora-font {
@@ -67,9 +98,21 @@
         </nav>
 
         <section class="mt-12 lg:mt-20 md:max-w-2xl lg:max-w-3xl xl:max-w-4xl 2xl:max-w-5xl mx-auto text-center">
-            <h2 class="mx-[3rem] lg:mx-[6.375rem] text-[2rem] lg:text-[3.5rem] font-semibold">Freshness <span class="text-[#179800]">You Can <br>
-                Count</span> On, 
+            <h2 class="mx-[3rem] lg:mx-[6.375rem] text-[2rem] lg:text-[3.5rem] font-semibold">
+
+              <div class="inline-block">
+                <div>
+                  <h1 class="animate-typing overflow-hidden whitespace-nowrap border-r-2 border-r-[#111111]">
+                    Freshness
+                  </h1>
+                </div>
+              </div> 
+
+              <br>
+              <span class="text-[#179800]">You Can Count <br>
+              </span> On, 
                 Prices You’ll Love!</h2>
+                
             <p class="mx-[3rem] lg:mx-[6.375rem] lg:text-sm my-8">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
             <img src="assets/hero-vegetables.png" alt="">
         </section>
@@ -320,7 +363,7 @@
             <input type="radio" name="my-accordion-2" checked="checked" />
             <div class="collapse-title text-xl font-medium">How do I place an order?</div>
             <div class="collapse-content">
-              <p>You can place an order through our website https://jahid-jhb.github.io/natures-platter/</p>
+              <p>You can place an order through our website <a class="text-blue-500 underline" href="https://jahid-jhb.github.io/natures-platter/">Nature's Platter</a></p>
             </div>
           </div>
           <div class="collapse collapse-arrow bg-white">
